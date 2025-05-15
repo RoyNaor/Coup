@@ -1,4 +1,4 @@
-# CPP_EX3_25 – Coup Game Implementation
+# Coup Game Implementation
 
 This project is a C++ implementation of the strategic bluffing game **Coup**, developed as part of an academic assignment to practice object-oriented programming concepts such as inheritance, polymorphism, and class design.
 
