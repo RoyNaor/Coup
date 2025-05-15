@@ -2,17 +2,6 @@
 
 This project is a C++ implementation of the strategic bluffing game **Coup**, developed as part of an academic assignment to practice object-oriented programming concepts such as inheritance, polymorphism, and class design.
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## 🧠 Overview
 
 The game simulates political intrigue where players aim to eliminate others and become the last one standing. Each player assumes a role with unique abilities, and the game progresses through actions like income collection, taxation, coups, and special role abilities.
@@ -36,8 +25,8 @@ The game simulates political intrigue where players aim to eliminate others and 
 ### Installation
 
 ```bash
-git clone https://github.com/BenjaminSaldman/CPP_EX3_25.git
-cd CPP_EX3_25
+git clone https://github.com/RoyNaor/Coup.git
+cd Coup
 mkdir build && cd build
 cmake ..
 make
@@ -77,15 +66,3 @@ cd tests
 g++ -std=c++17 -I../ -I../Roles *.cpp -o tests
 ./tests
 ```
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork the repo and submit pull requests for improvements or bug fixes.
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-> **Note:** This project was developed as part of an academic assignment. Please respect academic integrity and do not submit this as your own work.
