@@ -6,23 +6,27 @@ This project is a C++ implementation of the strategic bluffing game **Coup**, de
 
 The game simulates political intrigue where players aim to eliminate others and become the last one standing. Each player assumes a role with unique abilities, and the game progresses through actions like income collection, taxation, coups, and special role abilities.
 
-## 🎮 Features
+## ✨ Features
 
-- Multiple roles with distinct abilities: General, Governor, Judge, Merchant, Spy, Baron.
-- Special abilities for each role via polymorphic methods.
-- Turn-based actions: `gather`, `tax`, `bribe`, `arrest`, `sanction`, `coup`, `pass`.
-- Special handling for complex game logic, including blocking actions and reviving.
-- SFML-powered graphical interface for interactive play.
+- ✅ Object-Oriented Design with role-specific polymorphic behaviors  
+- 🎭 Role Types: Governor, General, Spy, Judge, Baron, Merchant  
+- 🪙 Actions: Gather, Tax, Bribe, Sanction, Arrest, Coup  
+- 🎯 Target selection with UI prompts  
+- ⌨️ Text-based UI using SFML for visual game screen  
+- 🧪 Unit testing using Doctest  
+- 🧠 Memory safety tested via **Valgrind**  
+
+---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### Requirements
 
-- C++17 or later
-- SFML library installed
-- CMake
-
-### Installation
+- C++11 or later  
+- SFML library  
+- `g++` compiler  
+- `valgrind` (for memory testing)  
+- Linux or Windows with WSL or Ubunto
 
 ```bash
 git clone https://github.com/RoyNaor/Coup.git
@@ -38,6 +42,17 @@ Run the game from the `bin` directory:
 
 ```bash
 ./CoupGame
+```
+
+Run the game's tests:
+
+```bash
+make test
+```
+
+Run the game's Memory Leak Check (Valgrind):
+```bash
+valgrind --leak-check=full ./coupGame
 ```
 
 Follow the in-game UI prompts to play.
@@ -59,10 +74,3 @@ Follow the in-game UI prompts to play.
 
 Unit tests are written using the [doctest](https://github.com/doctest/doctest) framework.
 
-To run tests:
-
-```bash
-cd tests
-g++ -std=c++17 -I../ -I../Roles *.cpp -o tests
-./tests
-```
